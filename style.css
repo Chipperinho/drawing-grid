@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    row-gap: 1px;
+    column-gap: 1px;
+    height: 250px;
+    width: 250px;
+}
+
+.square{
+    background-color: gray;
+    height: auto;
+    width: auto;
+}
+
+.square:hover, .square.active{
+    background-color: black;
+}
+
+.title{
+    padding: 15px;
+}
+
+.instructions{
+    padding: 15px;
+}
+
+#column{
+    width: 4em;
+}
+
+#row{
+    width: 4em;
+}
