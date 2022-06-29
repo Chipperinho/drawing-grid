@@ -3,6 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 #grid-container{
@@ -11,8 +12,8 @@ body {
     grid-template-rows: repeat(16, 1fr);
     row-gap: 1px;
     column-gap: 1px;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 }
 
 .square{
@@ -21,22 +22,89 @@ body {
     width: auto;
 }
 
-.square:hover, .square.active{
+.square.black{
     background-color: black;
+}
+
+.square.red{
+    background-color: red;
+}
+
+.square.blue{
+    background-color: blue;
+}
+
+.square.green{
+    background-color: green;
+}
+
+.square.yellow{
+    background-color: yellow;
 }
 
 .title{
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
 }
 
-.instructions{
-    padding: 15px;
+.title .resetBtn{
+    width: auto;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border-style: solid;
 }
 
-#column{
-    width: 4em;
+.title .resetBtn:hover{
+    background-color: rgb(150,150,150);
+    border-color: rgb(150,150,150);
 }
 
-#row{
-    width: 4em;
+.colorButtons {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin: 0px;
 }
+
+.colorButtons .blkBtn, .redBtn, .bluBtn, .grnBtn, .ylwBtn{
+    border-radius: 0px;
+    border-style: none;
+    padding: 0px;
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.colorButtons :hover{
+    flex: none;
+    margin: 3px;
+    width: 19px;
+    height: 19px;
+}
+
+.redBtn{
+    background-color: red;
+}
+
+.bluBtn{
+    background-color: blue;
+}
+.grnBtn{
+    background-color: green;
+}
+.ylwBtn{
+    background-color: yellow;
+}
+
+.blkBtn{
+    background-color: black;
+}
+

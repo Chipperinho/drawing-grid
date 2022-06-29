@@ -11,21 +11,19 @@
 <body>
     <div class = "title">
         PAINTING PIXELS
+        <button class = "resetBtn" onclick = "gridCreate()">
+            Update Grid
+        </button>
+        <div class = "colorButtons">
+            <button class = "blkBtn" onclick = "colorSelector('black')"></button>
+            <button class = "redBtn" onclick = "colorSelector('red')"></button>
+            <button class = "bluBtn" onclick = "colorSelector('blue')"></button>
+            <button class = "grnBtn" onclick = "colorSelector('green')"></button>
+            <button class = "ylwBtn" onclick = "colorSelector('yellow')"></button>
+        </div>
     </div>
     <div id = "grid-container">
 
-    </div>
-    <div class = "instructions">
-        left-click to paint,
-        left-click again to erase.
-    </div>
-    <div class = "choice-box">
-        size of grid: 
-        <input type="number" id="column" name="column" value="16">
-        </input> 
-        x 
-        <input type="number" id="row" name="row" value="16">
-        </input>
     </div>
 </body>
 </html>
